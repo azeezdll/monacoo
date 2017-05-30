@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+ 
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <script>
+    ons.bootstrap();
+
+
+
+  </script>
+
+ 
+ <style>
+ 
+ .ons-icon {
+  font-size: 35px;
+}
+
+.bottom-toolbar {
+ height: 95px;
+}
+.page__bottom-bar-fill ~ .page__content {
+ bottom: 95px;
+}
+ 
+ </style>
+ 
+  <style>
+  .profile-card {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  padding: 3px;
+  line-height: 1.4;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+  
+  
+    
+    }
+	
+
+.profile-image {
+  width: 98%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: black;
+  border 1px solid white;
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+.profile-imagewa {
+  width: 100%;
+  height:100%;
+}
+
+.profile-name {
+  margin: 20px 0 0 0;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.profile-id {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.profile-desc {
+  font-size: 18px;
+  opacity: 0.6;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom:3px solid #fff;
+}
+
+.profile-descdetail{
+  font-size: 20px;
+  font-weight:bold;
+  color:#000;
+  opacity: 0.6;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom:3px solid #fff;
+}
+
+.info-col {
+  height: 60px;
+  line-height: 1;
+  padding: 12px 0 12px 4px;
+}
+
+.info-num {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+  
+  </style>
+</head>
+
+
+<body >    
+
+
+
+  
+	
+	    
+    <ons-sliding-menu menu-page="menu.html" main-page="homepage.html" side="left" 
+			var="menu"  max-slide-distance="200px" swipeable="true">
+					  
+    </ons-sliding-menu>
+	
+	
+    <ons-template id="menu.html">
+        <ons-page modifier="menu-page">
+            <ons-toolbar modifier="transparent"></ons-toolbar>
+
+            <ons-list class="menu-list">
+                
+				
+				
+				<!-- <ons-list-item class="menu-item" ng-click="menu.setMainPage('livetv.html', {closeMenu: true})">
+                    <ons-icon icon="fa-plus"></ons-icon>
+                   Live TV
+                </ons-list-item>-->
+				
+            </ons-list>
+
+            <br>
+
+            <ons-list class="bottom-menu-list">
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('about.html', {closeMenu: true})">
+                    About Us
+                    <!--<div class="notification menu-notification">3</div>-->
+                </ons-list-item>
+
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('contact.html', {closeMenu: true})">
+                    Contact
+                </ons-list-item>
+
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('help.html', {closeMenu: true})">
+                    Help
+                </ons-list-item>
+            </ons-list>
+        </ons-page>
+    </ons-template>
+	
+	
+	 <ons-template id="homepage.html">
+	
+   <ons-navigator var="homev">
+         <ons-page style="background: url('image/mobbak.png'); background-position:center; background-repeat:no-repeat; background-size:cover;">
+           
+			<ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()" class="toolbar-button--outline">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+				
+                <div class="center">
+				
+                      
+                      <span class="toolbar-button--outline navigation-bar__line-height" ng-click="menu.setMainPage('homepage.html', {closeMenu: true})"> THERUVATH SALATH LIVE</span>
+				
+				</div>
+				<!-- <div class="right">  <span> <img  src="image/logo.png" /></span></div>-->
+            </ons-toolbar>
+
+      <section style="padding: 8px">
+    
+    <p></p>
+    <ons-button modifier="large--quiet"></ons-button>
+    <p></p>
+    
+  </section>
+
+ 
+   <!--
+     <div class="profile-card" style=" flex: 4; border: solid; border-color: #fff;" >
+		<a href="" onclick="window.open('http://www.mgchannel.in', '_system');"> <img src="image/liveaudio.png" class="profile-imagewa" ></a>
+	 </div>
+	 -->
+    
+	  <ons-list >
+           	<section style="padding: 8px">
+  
+    
+   
+<!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+<script>	
+	$(document).ready(function() {
+   
+            $('#test1').hide();           
+       }
+
+      
+   );
+
+</script>	
+
+
+<audio id="myVideo" width="320" height="176">
+  <source src="http://188.40.135.197:8364/stream" type="audio/mp3">
+  
+</audio>
+	
+<script>	
+	
+var vid = document.getElementById("myVideo");
+
+function playVid() {
+	document.getElementById("load").innerHTML="loading";
+	
+	
+	
+	
+    vid.play();
+	
+	 // Pause after 10 seconds
+    setTimeout(function () {
+        document.getElementById("load").innerHTML="";
+    }, 20000);
+	
+			if (!vid.paused) {
+
+		 document.getElementById("load").innerHTML="STOP";
+
+
+		} else {
+
+		document.getElementById("load").innerHTML="error";
+
+		}
+		
+		
+		// Mute volume after 2 seconds
+    setTimeout(function() {
+        vid.setVolume('0.0');
+    }, 2000);
+
+    // Set volume to 1.0 after 5 seconds
+    setTimeout(function() {
+        vid.setVolume('1.0');
+    }, 5000);
+	$('#test1').show(); 
+	 $('#test').hide(); 
+	
+}
+
+function pauseVid() {
+    vid.pause();
+	
+	
+			if (vid.duration > 0 && !vid.paused) {
+
+		 document.getElementById("load").innerHTML="play";
+
+		} else {
+
+		document.getElementById("load").innerHTML="";
+
+		}
+	$('#test').show(); 
+	 $('#test1').hide(); 
+}
+
+</script>
+
+
+
+</p>
+    <BR>
+
+ <div style="width:100%; margin-top:5%; " >
+	<p id="test"  style="color:green;  text-align:center" onclick="playVid()" > <img src="image/start.png" /></p>
+	
+<p id="test1"  style="color:red;text-align:center" onclick="pauseVid()" ><img src="image/stop.png" /></p>
+</div>
+
+<ons-row class="center bordertop1 grey1" style="margin-top:10px; width:100%; text-align:center !important;">
+                    <ons-col class="center borderright1 grey1" ng-click="" style="" >
+
+<div id="load">   </div>
+					</ons-col>
+                   
+ </ons-row>
+ 
+  <div class="profile-card"   >
+  
+		<!--<a href="" > <img src="image/homeimage.jpg" class="profile-imagewa" ></a>-->
+		
+	 </div>
+ 
+
+
+  </section>
+            </ons-list>
+	  
+	
+	  
+			
+			<ons-row>
+    <ons-col>
+	<!--
+	   <ons-list style="text-align: center">
+    <ons-lazy-repeat id="infinite-list">
+	  <ons-button modifier="light" > VISIT OUR WEBSITE</ons-button>
+	</ons-lazy-repeat>
+	
+  </ons-list>
+   <ons-list style="text-align: center">
+	
+	<p style="text-align: center">
+   <a href="" onclick="window.open('http://www.mgchannel.in', '_system');">  <ons-button >mgchannel.in</ons-button></a>
+  </p>
+  </ons-list>-->
+	
+    </ons-col>
+  </ons-row>
+  
+  
+        </ons-page>
+		</ons-navigator>
+    </ons-template>
+	
+	
+	
+	 <ons-template id="mgradio.html">
+   <ons-navigator var="keralav">
+        <ons-page style="background: url('image/mobbak.png'); background-position:center; background-repeat:no-repeat; background-size:cover;">
+           
+			<ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()" class="toolbar-button--outline">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+				
+                <div class="center">
+				
+                      
+                      <span class="toolbar-button--outline navigation-bar__line-height" ng-click="menu.setMainPage('homepage.html', {closeMenu: true})"> THERUVATH SALATH LIVE</span>
+				
+				</div>
+				<!-- <div class="right">  <span> <img  src="image/logo.png" /></span></div>-->
+            </ons-toolbar>
+            
+
+         
+			<ons-row>
+    <ons-col><p style="text-align: center">
+      <ons-button modifier="light" >MISSION & VISION</ons-button>
+    </p></ons-col>
+	
+	
+	<p style="padding-left:12px;padding-right:10px;">
+	theruvath swalath , swalath majlis theruvath controlled by  najathul islam sangam theruvath . now it will available in website, online radio and apps. The timing of swalath normally in 9.00 to 10.30 pm and 10.30 to 12.00 pm in ramazan month.
+	</p>
+	
+	
+  </ons-row>
+			
+        </ons-page>
+		</ons-navigator>
+    </ons-template>
+	
+	
+	
+	
+	<ons-template id="about.html">
+         <ons-page style="background: url('image/mobbak.png'); background-position:center; background-repeat:no-repeat; background-size:cover;">
+
+            	<ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()" class="toolbar-button--outline">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+				
+                <div class="center">
+				
+                      
+                      <span class="toolbar-button--outline navigation-bar__line-height" ng-click="menu.setMainPage('homepage.html', {closeMenu: true})"> THERUVATH SALATH LIVE</span>
+				
+				</div>
+				<!-- <div class="right">  <span> <img  src="image/logo.png" /></span></div>-->
+            </ons-toolbar>
+
+
+			<ons-row>
+    <ons-col><p style="text-align: center">
+      <ons-button modifier="light" ng-click="app.navi.popPage('page.html');">ABOUT THERUVATH SALATH</ons-button>
+    </p></ons-col>
+	<p style="padding-left:12px;padding-right:10px;">
+	theruvath swalath , swalath majlis theruvath controlled by  najathul islam sangam theruvath . now it will available in website, online radio and apps. The timing of swalath normally in 9.00 to 10.30 pm and 10.30 to 12.00 pm in ramazan month..
+	</p>
+	
+	
+  </ons-row>
+           
+
+          
+
+            <br>
+<ons-bottom-toolbar>
+    <div class="tab-bar">
+      <label ng-click="menu.setMainPage('homepage.html')" class="tab-bar__item">
+        <input type="radio" name="tab-bar-b">
+             <button class="tab-bar__button">
+           <ons-button modifier="large">Home</ons-button>
+             </button>
+      </label>
+     
+    </div>
+  </ons-bottom-toolbar>
+        </ons-page>
+    </ons-template>
+	
+	<ons-template id="contact.html">
+       <ons-page style="background: url('image/mobbak.png'); background-position:center; background-repeat:no-repeat; background-size:cover;">
+
+            	<ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()" class="toolbar-button--outline">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+				
+                <div class="center">
+				
+                      
+                      <span class="toolbar-button--outline navigation-bar__line-height" ng-click="menu.setMainPage('homepage.html', {closeMenu: true})"> THERUVATH SALATH LIVE</span>
+				
+				</div>
+				<!-- <div class="right">  <span> <img  src="image/logo.png" /></span></div>-->
+            </ons-toolbar>
+
+
+           <ons-row>
+    <ons-col><p style="text-align: center">
+      <ons-button modifier="light" ng-click="app.navi.popPage('page.html');">ABOUT US</ons-button>
+    </p></ons-col>
+	
+	<div class="profile-card"   >
+		<!--<a href="" > <img src="image/contact.jpg" class="profile-imagewa" ></a>-->
+	 </div>
+	                     
+<p style="padding-left:12px;padding-right:10px;">
+
+Theruvath<br>
+Thalangara P.O.<br>
+Kasaragod District<br>
+Kerala State, INDIA<br>
+Pincode - .<br>
+Email: 
+Ph.
+</p>  
+	
+	
+  </ons-row>
+
+            <ons-list style="margin-top: 100px">
+                <ons-list-item class="item" >
+                    <header>
+                        <span class="item-title">CONTACT THERUVATH SALATH</span>
+                    </header>
+                    <p class="item-desc">
+                        
+               
+				
+                    </p>
+                </ons-list-item>
+            </ons-list>
+
+            <br>
+
+        </ons-page>
+    </ons-template>
+	
+	
+
+	
+	 <ons-bottom-toolbar>
+    <div class="tab-bar">
+      <label ng-click="menu.setMainPage('homepage.html')" class="tab-bar__item">
+        <input type="radio" name="tab-bar-b">
+             <button class="tab-bar__button">
+             Home
+             </button>
+      </label>
+      <label ng-click="menu.setMainPage('about.html')" class="tab-bar__item">
+        <input type="radio" name="tab-bar-b">
+             <button class="tab-bar__button">
+              About
+             </button>
+      </label>
+      <label ng-click="menu.setMainPage('mgradio.html')" class="tab-bar__item">
+        <input type="radio" name="tab-bar-b">
+             <button class="tab-bar__button">
+             Mission
+             </button>
+      </label>
+       <label ng-click="menu.setMainPage('contact.html')" class="tab-bar__item">
+        <input type="radio" name="tab-bar-b">
+             <button class="tab-bar__button">
+               Contact
+             </button>
+      </label>
+    </div>
+  </ons-bottom-toolbar>
+	
+<!--	 
+<ons-tabbar>
+  <ons-tab label="Radio" page="kerala.html" active>
+			
+  </ons-tab>
+  <ons-tab label="About" page="about.html">
+  </ons-tab>
+  <ons-tab label="Contact" page="contact.html">
+  </ons-tab>
+</ons-tabbar>-->
+
+</body>
+</html>
